@@ -28,7 +28,7 @@ INSERT INTO owners VALUES (default, 'Kim', 'Yuchang', 'Americano', 'Ice', '95217
 INSERT INTO owners VALUES (default, 'Choi', 'Yijeong', 'Cafe Mocha', 'Hot', '60855319');
 INSERT INTO owners VALUES (default, 'Park', 'Hyogwan', 'orange juice', 'No Ice', '94133645');
 INSERT INTO owners VALUES (default, 'Jeon', 'dongjin', 'Cafe Mocha', 'Hot', '68552654');
-INSERT INTO owners VALUES (default, 'Jeff', 'Black', '1450 Oak Blvd.', 'Monona', '6085555387');
+INSERT INTO owners VALUES (default, 'Jefe', 'Black', '1450 Oak Blvd.', 'Monona', '6085555387');
 INSERT INTO owners VALUES (default, 'Maria', 'Escobito', '345 Maple St.', 'Madison', '6085557683');
 INSERT INTO owners VALUES (default, 'David', 'Schroeder', '2749 Blackhawk Trail', 'Madison', '6085559435');
 INSERT INTO owners VALUES (default, 'Carlos', 'Estaban', '2335 Independence La.', 'Waunakee', '6085555487');
