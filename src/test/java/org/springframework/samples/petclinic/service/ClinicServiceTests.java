@@ -84,7 +84,7 @@ class ClinicServiceTests {
 	@Test
 	void shouldFindOwnersByLastName() {
 		Page<Owner> owners = this.owners.findByLastName("Davis", pageable);
-		assertThat(owners).hasSize();
+		assertThat(owners).hasSize(2);
 
 		owners = this.owners.findByLastName("Daviss", pageable);
 		assertThat(owners).isEmpty();
@@ -93,7 +93,7 @@ class ClinicServiceTests {
 	@Test
 	void shouldFindSingleOwnerWithPet() {
 		Owner owner = this.owners.findById(1);
-		assertThat(owner.getLastName()).startsWith("Hyunseung");
+		assertThat(owner.getLastName()).startsWith("Franklin");
 		assertThat(owner.getPets()).hasSize(1);
 		assertThat(owner.getPets().get(0).getType()).isNotNull();
 		assertThat(owner.getPets().get(0).getType().getName()).isEqualTo("cat");
@@ -187,9 +187,9 @@ class ClinicServiceTests {
 		Collection<Vet> vets = this.vets.findAll();
 
 		Vet vet = EntityUtils.getById(vets, Vet.class, 3);
-		assertThat(vet.getLastName()).isEqualTo("CentumCity");
+		assertThat(vet.getLastName()).isEqualTo("Douglas");
 		assertThat(vet.getNrOfSpecialties()).isEqualTo(2);
-		assertThat(vet.getSpecialties().get(0).getName()).isEqualTo("~10min");
+		assertThat(vet.getSpecialties().get(0).getName()).isEqualTo("dentistry");
 		assertThat(vet.getSpecialties().get(1).getName()).isEqualTo("surgery");
 	}
 
